@@ -22,6 +22,10 @@ matrix:
       osx_image: xcode8.3
       language: go
       go: 1.13
+  include:
+    - os: linux
+      language: ppc64le
+      go: 1.13
 
 # Install fuse before installing our code.
 before_install:
