@@ -24,6 +24,11 @@ matrix:
       go: 1.13
   include:
     - os: linux
+      language: amd64
+      go: 1.13
+
+  include:
+    - os: linux
       language: ppc64le
       go: 1.13
 
