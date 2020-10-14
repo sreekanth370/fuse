@@ -5,6 +5,9 @@ matrix:
   include:
     - os: linux
       language: go
+      arch: 
+      - amd64
+      - ppc64le
       go: 1.13
       # Use the virtualized Trusty beta Travis is running in order to get
       # support for installing fuse.
@@ -21,15 +24,6 @@ matrix:
       # See https://github.com/travis-ci/travis-ci/issues/10017 for details.
       osx_image: xcode8.3
       language: go
-      go: 1.13
-  include:
-    - os: linux
-      language: amd64
-      go: 1.13
-
-  include:
-    - os: linux
-      language: ppc64le
       go: 1.13
 
 # Install fuse before installing our code.
